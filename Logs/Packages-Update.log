@@ -1,0 +1,10 @@
+
+=== Thu May  4 20:36:43 2023
+
+Packages were changed.
+Update Mode: mergeDefaultDependencies
+
+The following packages were added:
+  com.unity.cinemachine@2.3.4
+  com.unity.ext.nunit@1.0.0
+  com.unity.package-manager-ui@2.2.0
