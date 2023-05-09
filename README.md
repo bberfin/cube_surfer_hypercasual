@@ -16,7 +16,10 @@ The remarkable parts in the section are:
 - obstacles and the platform have been chosen in accordance with the section. 
 - Meteors are rotated for real effect.
 
-https://github.com/bberfin/cube_surfer_hypercasual/assets/59581456/25830497-9352-4b25-85e2-2dba97009e5b
+
+https://github.com/bberfin/cube_surfer_hypercasual/assets/59581456/90d1d525-3990-46c1-ab1b-c894119d52a3
+
+
 
 >LEVEL 2 - ABANDONED WORLD
 
