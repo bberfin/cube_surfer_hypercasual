@@ -46,7 +46,18 @@ public class CubeBehaviour : MonoBehaviour
                 ScoreScene.Instance.PlayerScore++;               
             }
 
-            
+            if (hit.transform.gameObject.CompareTag("Trap"))
+            {
+                audioSource = hit.transform.gameObject.GetComponent<AudioSource>();
+                audioSource.Play();
+                Instantiate(ObstacleEffect, transform.position, Quaternion.identity);
+                PlayerCubeManager.Instance.DropCube(this);
+                gameObject.SetActive(false);
+
+            }
+
+
+
             if (hit.transform.gameObject.CompareTag("EndOfLevel"))
             {
                 Debug.Log($"on trigger enter: {hit.transform.gameObject.name}");
