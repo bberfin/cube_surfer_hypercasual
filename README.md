@@ -8,6 +8,55 @@
 - The character moves forward at a constant speed. You want to be able to change this speed from the editor.
 - The player starts the game with 1 cube and collects these cubes and, stacks them. The cubes are placed on the bottom floor, the other cubes go up one floor.
 # 
+##### LEVELS 
+
+>LEVEL 1 - INTO THE BLACKHOLE 
+
+The remarkable parts in the section are: 
+- obstacles and the platform have been chosen in accordance with the section. 
+- Meteors are rotated for real effect.
+
+https://github.com/bberfin/cube_surfer_hypercasual/assets/59581456/25830497-9352-4b25-85e2-2dba97009e5b
+
+>LEVEL 2 - ABANDONED WORLD
+
+The remarkable parts in the section are:
+- If it touches the crosses on the ground, one cube is reduced.
+
+https://github.com/bberfin/cube_surfer_hypercasual/assets/59581456/d880848e-9ba6-4a57-96a7-61b40c43453e
+
+>LEVEL 3 - MOON MISSION
+
+https://github.com/bberfin/cube_surfer_hypercasual/assets/59581456/90a0f8db-13f3-4e5b-9f70-ed16482bf6f1
+
+
+>LEVEL 4 - ALONE IN SPACE
+
+https://github.com/bberfin/cube_surfer_hypercasual/assets/59581456/6bff767a-338c-4f6f-85d3-e5a4dabb894d
+
+
+### EXTRA FEATURES
+
+>Volume
+
+- You can change the music volume whatever you want (DON'T FORGET TO TURN ON THE VIDEO VOICE !!!!!!!!)
+
+https://github.com/bberfin/cube_surfer_hypercasual/assets/59581456/ffebf2a7-b4c6-43dc-9e75-dfd8eea37439
+
+>GROUND OBSTACLES
+
+- The obstacles which is yellow cross in black ground reduce a cube. If player has only one cube then it will be failed.
+
+
+
+https://github.com/bberfin/cube_surfer_hypercasual/assets/59581456/081add5c-b7b3-4037-a503-3664110997f2
+
+
+>STOP BUTTON
+- You can pause the game whenever you need. After that, you can move wherever you left off in the game.
+
+https://github.com/bberfin/cube_surfer_hypercasual/assets/59581456/b45d9d4c-8b6c-477a-a8ea-e9cba60f71c6
+
 >MENU SCENE
 
 Buttons can be used to start the game directly or to get information before starting the game.
