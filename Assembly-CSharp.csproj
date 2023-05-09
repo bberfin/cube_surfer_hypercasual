@@ -85,6 +85,7 @@
     <Compile Include="Assets\CubeSurfer\Scripts\Player\PlayerCubes\PlayerCubeManager.cs" />
     <Compile Include="Assets\ABKaspo Games Assets\AURW\Scripts\Free_UnderWaterEffect.cs" />
     <Compile Include="Assets\CubeSurfer\Scripts\Player\PlayerMotion\PlayerMoverController.cs" />
+    <Compile Include="Assets\CubeSurfer\Scripts\Game\StopGame.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
