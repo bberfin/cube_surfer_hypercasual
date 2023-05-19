@@ -60,6 +60,7 @@ public class GameManager : MonoBehaviour
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex + 1);
         Debug.Log(currentSceneIndex);
+        LevelLoader.UnlockLevel(currentSceneIndex+1);
     }
      public void Fail()
     {

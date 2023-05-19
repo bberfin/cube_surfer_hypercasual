@@ -66,8 +66,10 @@
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_AutoRotate.cs" />
     <Compile Include="Assets\CubeSurfer\Scripts\Cube\CubeRotation.cs" />
     <Compile Include="Assets\CubeSurfer\Scripts\Settings\AudioManager.cs" />
+    <Compile Include="Assets\CubeSurfer\Scripts\Game\ReturnHomePage.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RandomDirectionTranslate.cs" />
+    <Compile Include="Assets\CubeSurfer\Scripts\Game\StopGame.cs" />
     <Compile Include="Assets\CubeSurfer\Scripts\Settings\LevelAudioController.cs" />
     <Compile Include="Assets\CubeSurfer\Scripts\Game\ScoreScene.cs" />
     <Compile Include="Assets\CubeSurfer\Scripts\Game\ProgressBar.cs" />
@@ -77,6 +79,7 @@
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_Translate.cs" />
     <Compile Include="Assets\CubeSurfer\Scripts\Game\GameManager.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_New.cs" />
+    <Compile Include="Assets\CubeSurfer\Scripts\Game\LevelLoader.cs" />
     <Compile Include="Assets\CubeSurfer\Scripts\Settings\SettingManager.cs" />
     <Compile Include="Assets\CubeSurfer\Scripts\Cube\CubeBehaviour.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_LightFlicker.cs" />
@@ -85,7 +88,7 @@
     <Compile Include="Assets\CubeSurfer\Scripts\Player\PlayerCubes\PlayerCubeManager.cs" />
     <Compile Include="Assets\ABKaspo Games Assets\AURW\Scripts\Free_UnderWaterEffect.cs" />
     <Compile Include="Assets\CubeSurfer\Scripts\Player\PlayerMotion\PlayerMoverController.cs" />
-    <Compile Include="Assets\CubeSurfer\Scripts\Game\StopGame.cs" />
+    <Compile Include="Assets\CubeSurfer\Scripts\Game\QuitGame.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

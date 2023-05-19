@@ -11,7 +11,8 @@ public class TransitionScenes : MonoBehaviour
 
 
     public RectTransform MenuUI;
-    public RectTransform InformUI;   
+    public RectTransform InformUI;       
+    public RectTransform LevelsUI;   
     
     public void StartGame()
     {
@@ -30,6 +31,18 @@ public class TransitionScenes : MonoBehaviour
     {
         MenuUI.gameObject.SetActive(true);
         InformUI.gameObject.SetActive(false);
+    }    
+    
+    public void ActivateLevelsUI()
+    {
+        MenuUI.gameObject.SetActive(false);
+        LevelsUI.gameObject.SetActive(true);
+    }
+
+    public void DeActivateLevelsUI()
+    {
+        MenuUI.gameObject.SetActive(true);
+        LevelsUI.gameObject.SetActive(false);
     }
 
 }
