@@ -1,6 +1,8 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - AccountManager
+    - AdsManager
     - CFX_AutoDestructShuriken
     - CFX_LightIntensityFade
     - CubeBehaviour
@@ -14,6 +16,7 @@ ScriptsOnlyBuild:
     - PlayerCubeManager
     - PlayerMoverController
     - PlayerMoverRunner
+    - ProductManager
     - ProgressBar
     - QuitGame
     - ReturnHomePage
@@ -23,8 +26,13 @@ ScriptsOnlyBuild:
     - TransitionScenes
     DOTween.dll:
     - DG.Tweening.Core.DOTweenSettings
+    HuaweiMobileServices.Core.dll:
+    - HmsPlugin.SettingsScriptableObject
+    - LargeImageNative
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
+    - UnityEditor.Tilemaps.GridPaletteBrushes
+    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
@@ -48,6 +56,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.RawImage
     - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
   sceneClasses:
@@ -93,55 +102,61 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1652}
+      Script: {instanceID: 1614}
     - Class: 114
-      Script: {instanceID: 1720}
+      Script: {instanceID: 1616}
     - Class: 114
-      Script: {instanceID: 1946}
+      Script: {instanceID: 1618}
     - Class: 114
-      Script: {instanceID: 1952}
+      Script: {instanceID: 1750}
     - Class: 114
-      Script: {instanceID: 2120}
+      Script: {instanceID: 2016}
     - Class: 114
-      Script: {instanceID: 2306}
+      Script: {instanceID: 2022}
     - Class: 114
-      Script: {instanceID: 2606}
+      Script: {instanceID: 2216}
     - Class: 114
-      Script: {instanceID: 2696}
+      Script: {instanceID: 2750}
     - Class: 114
-      Script: {instanceID: 2758}
+      Script: {instanceID: 2852}
     - Class: 114
-      Script: {instanceID: 2838}
+      Script: {instanceID: 2920}
     - Class: 114
-      Script: {instanceID: 2886}
+      Script: {instanceID: 3004}
     - Class: 114
-      Script: {instanceID: 3042}
+      Script: {instanceID: 3060}
     - Class: 114
-      Script: {instanceID: 3086}
+      Script: {instanceID: 3234}
     - Class: 114
-      Script: {instanceID: 3264}
+      Script: {instanceID: 3288}
     - Class: 114
-      Script: {instanceID: 3374}
+      Script: {instanceID: 3402}
     - Class: 114
-      Script: {instanceID: 3440}
+      Script: {instanceID: 3498}
     - Class: 114
-      Script: {instanceID: 3466}
+      Script: {instanceID: 3622}
     - Class: 114
-      Script: {instanceID: 3612}
+      Script: {instanceID: 3704}
     - Class: 114
-      Script: {instanceID: 3650}
+      Script: {instanceID: 3738}
     - Class: 114
-      Script: {instanceID: 3672}
+      Script: {instanceID: 3904}
     - Class: 114
-      Script: {instanceID: 4518}
+      Script: {instanceID: 3946}
     - Class: 114
-      Script: {instanceID: 4910}
+      Script: {instanceID: 3970}
     - Class: 114
-      Script: {instanceID: 4936}
+      Script: {instanceID: 4900}
     - Class: 114
-      Script: {instanceID: 5286}
+      Script: {instanceID: 5112}
     - Class: 114
-      Script: {instanceID: 5344}
+      Script: {instanceID: 5324}
+    - Class: 114
+      Script: {instanceID: 5354}
+    - Class: 114
+      Script: {instanceID: 5742}
+    - Class: 114
+      Script: {instanceID: 5806}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -206,39 +221,55 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: -356}
     - Class: 114
-      Script: {instanceID: 1652}
+      Script: {instanceID: 1614}
     - Class: 114
-      Script: {instanceID: 1852}
+      Script: {instanceID: 1616}
     - Class: 114
-      Script: {instanceID: 1952}
+      Script: {instanceID: 1618}
     - Class: 114
-      Script: {instanceID: 2296}
+      Script: {instanceID: 1854}
     - Class: 114
-      Script: {instanceID: 2306}
+      Script: {instanceID: 1900}
     - Class: 114
-      Script: {instanceID: 2696}
+      Script: {instanceID: 2022}
     - Class: 114
-      Script: {instanceID: 2838}
+      Script: {instanceID: 2408}
     - Class: 114
-      Script: {instanceID: 3042}
+      Script: {instanceID: 2852}
     - Class: 114
-      Script: {instanceID: 3264}
+      Script: {instanceID: 3004}
     - Class: 114
-      Script: {instanceID: 3374}
+      Script: {instanceID: 3060}
     - Class: 114
-      Script: {instanceID: 3760}
+      Script: {instanceID: 3234}
     - Class: 114
-      Script: {instanceID: 3900}
+      Script: {instanceID: 3402}
     - Class: 114
-      Script: {instanceID: 4576}
+      Script: {instanceID: 3498}
     - Class: 114
-      Script: {instanceID: 4748}
+      Script: {instanceID: 3622}
     - Class: 114
-      Script: {instanceID: 4756}
+      Script: {instanceID: 4016}
     - Class: 114
-      Script: {instanceID: 4906}
+      Script: {instanceID: 4070}
     - Class: 114
-      Script: {instanceID: 5356}
+      Script: {instanceID: 4156}
+    - Class: 114
+      Script: {instanceID: 4220}
+    - Class: 114
+      Script: {instanceID: 4900}
+    - Class: 114
+      Script: {instanceID: 4968}
+    - Class: 114
+      Script: {instanceID: 5112}
+    - Class: 114
+      Script: {instanceID: 5148}
+    - Class: 114
+      Script: {instanceID: 5156}
+    - Class: 114
+      Script: {instanceID: 5320}
+    - Class: 114
+      Script: {instanceID: 5818}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -305,55 +336,61 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1652}
+      Script: {instanceID: 1614}
     - Class: 114
-      Script: {instanceID: 1720}
+      Script: {instanceID: 1616}
     - Class: 114
-      Script: {instanceID: 1946}
+      Script: {instanceID: 1618}
     - Class: 114
-      Script: {instanceID: 1952}
+      Script: {instanceID: 1750}
     - Class: 114
-      Script: {instanceID: 2120}
+      Script: {instanceID: 2016}
     - Class: 114
-      Script: {instanceID: 2306}
+      Script: {instanceID: 2022}
     - Class: 114
-      Script: {instanceID: 2606}
+      Script: {instanceID: 2216}
     - Class: 114
-      Script: {instanceID: 2696}
+      Script: {instanceID: 2750}
     - Class: 114
-      Script: {instanceID: 2758}
+      Script: {instanceID: 2852}
     - Class: 114
-      Script: {instanceID: 2838}
+      Script: {instanceID: 2920}
     - Class: 114
-      Script: {instanceID: 2886}
+      Script: {instanceID: 3004}
     - Class: 114
-      Script: {instanceID: 3042}
+      Script: {instanceID: 3060}
     - Class: 114
-      Script: {instanceID: 3086}
+      Script: {instanceID: 3234}
     - Class: 114
-      Script: {instanceID: 3264}
+      Script: {instanceID: 3288}
     - Class: 114
-      Script: {instanceID: 3374}
+      Script: {instanceID: 3402}
     - Class: 114
-      Script: {instanceID: 3440}
+      Script: {instanceID: 3498}
     - Class: 114
-      Script: {instanceID: 3466}
+      Script: {instanceID: 3622}
     - Class: 114
-      Script: {instanceID: 3612}
+      Script: {instanceID: 3704}
     - Class: 114
-      Script: {instanceID: 3650}
+      Script: {instanceID: 3738}
     - Class: 114
-      Script: {instanceID: 3672}
+      Script: {instanceID: 3904}
     - Class: 114
-      Script: {instanceID: 4518}
+      Script: {instanceID: 3946}
     - Class: 114
-      Script: {instanceID: 4910}
+      Script: {instanceID: 3970}
     - Class: 114
-      Script: {instanceID: 4936}
+      Script: {instanceID: 4900}
     - Class: 114
-      Script: {instanceID: 5286}
+      Script: {instanceID: 5112}
     - Class: 114
-      Script: {instanceID: 5344}
+      Script: {instanceID: 5324}
+    - Class: 114
+      Script: {instanceID: 5354}
+    - Class: 114
+      Script: {instanceID: 5742}
+    - Class: 114
+      Script: {instanceID: 5806}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -434,55 +471,61 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1652}
+      Script: {instanceID: 1614}
     - Class: 114
-      Script: {instanceID: 1720}
+      Script: {instanceID: 1616}
     - Class: 114
-      Script: {instanceID: 1946}
+      Script: {instanceID: 1618}
     - Class: 114
-      Script: {instanceID: 1952}
+      Script: {instanceID: 1750}
     - Class: 114
-      Script: {instanceID: 2120}
+      Script: {instanceID: 2016}
     - Class: 114
-      Script: {instanceID: 2306}
+      Script: {instanceID: 2022}
     - Class: 114
-      Script: {instanceID: 2606}
+      Script: {instanceID: 2216}
     - Class: 114
-      Script: {instanceID: 2696}
+      Script: {instanceID: 2750}
     - Class: 114
-      Script: {instanceID: 2758}
+      Script: {instanceID: 2852}
     - Class: 114
-      Script: {instanceID: 2838}
+      Script: {instanceID: 2920}
     - Class: 114
-      Script: {instanceID: 2886}
+      Script: {instanceID: 3004}
     - Class: 114
-      Script: {instanceID: 3042}
+      Script: {instanceID: 3060}
     - Class: 114
-      Script: {instanceID: 3086}
+      Script: {instanceID: 3234}
     - Class: 114
-      Script: {instanceID: 3264}
+      Script: {instanceID: 3288}
     - Class: 114
-      Script: {instanceID: 3374}
+      Script: {instanceID: 3402}
     - Class: 114
-      Script: {instanceID: 3440}
+      Script: {instanceID: 3498}
     - Class: 114
-      Script: {instanceID: 3466}
+      Script: {instanceID: 3622}
     - Class: 114
-      Script: {instanceID: 3612}
+      Script: {instanceID: 3704}
     - Class: 114
-      Script: {instanceID: 3650}
+      Script: {instanceID: 3738}
     - Class: 114
-      Script: {instanceID: 3672}
+      Script: {instanceID: 3904}
     - Class: 114
-      Script: {instanceID: 4518}
+      Script: {instanceID: 3946}
     - Class: 114
-      Script: {instanceID: 4910}
+      Script: {instanceID: 3970}
     - Class: 114
-      Script: {instanceID: 4936}
+      Script: {instanceID: 4900}
     - Class: 114
-      Script: {instanceID: 5286}
+      Script: {instanceID: 5112}
     - Class: 114
-      Script: {instanceID: 5344}
+      Script: {instanceID: 5324}
+    - Class: 114
+      Script: {instanceID: 5354}
+    - Class: 114
+      Script: {instanceID: 5742}
+    - Class: 114
+      Script: {instanceID: 5806}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -565,55 +608,61 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1652}
+      Script: {instanceID: 1614}
     - Class: 114
-      Script: {instanceID: 1720}
+      Script: {instanceID: 1616}
     - Class: 114
-      Script: {instanceID: 1946}
+      Script: {instanceID: 1618}
     - Class: 114
-      Script: {instanceID: 1952}
+      Script: {instanceID: 1750}
     - Class: 114
-      Script: {instanceID: 2120}
+      Script: {instanceID: 2016}
     - Class: 114
-      Script: {instanceID: 2306}
+      Script: {instanceID: 2022}
     - Class: 114
-      Script: {instanceID: 2606}
+      Script: {instanceID: 2216}
     - Class: 114
-      Script: {instanceID: 2696}
+      Script: {instanceID: 2750}
     - Class: 114
-      Script: {instanceID: 2758}
+      Script: {instanceID: 2852}
     - Class: 114
-      Script: {instanceID: 2838}
+      Script: {instanceID: 2920}
     - Class: 114
-      Script: {instanceID: 2886}
+      Script: {instanceID: 3004}
     - Class: 114
-      Script: {instanceID: 3042}
+      Script: {instanceID: 3060}
     - Class: 114
-      Script: {instanceID: 3086}
+      Script: {instanceID: 3234}
     - Class: 114
-      Script: {instanceID: 3264}
+      Script: {instanceID: 3288}
     - Class: 114
-      Script: {instanceID: 3374}
+      Script: {instanceID: 3402}
     - Class: 114
-      Script: {instanceID: 3440}
+      Script: {instanceID: 3498}
     - Class: 114
-      Script: {instanceID: 3466}
+      Script: {instanceID: 3622}
     - Class: 114
-      Script: {instanceID: 3612}
+      Script: {instanceID: 3704}
     - Class: 114
-      Script: {instanceID: 3650}
+      Script: {instanceID: 3738}
     - Class: 114
-      Script: {instanceID: 3672}
+      Script: {instanceID: 3904}
     - Class: 114
-      Script: {instanceID: 4518}
+      Script: {instanceID: 3946}
     - Class: 114
-      Script: {instanceID: 4910}
+      Script: {instanceID: 3970}
     - Class: 114
-      Script: {instanceID: 4936}
+      Script: {instanceID: 4900}
     - Class: 114
-      Script: {instanceID: 5286}
+      Script: {instanceID: 5112}
     - Class: 114
-      Script: {instanceID: 5344}
+      Script: {instanceID: 5324}
+    - Class: 114
+      Script: {instanceID: 5354}
+    - Class: 114
+      Script: {instanceID: 5742}
+    - Class: 114
+      Script: {instanceID: 5806}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -647,6 +696,30 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
+      Hash: a6e561615949734e9f12f9b61661f43e
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: c1d728126ff1918728036c59106d32b2
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: RawImage
+  - hash:
+      serializedVersion: 2
+      Hash: 699619b86d9359741a4f58540298c80b
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: PushDemoManager
+  - hash:
+      serializedVersion: 2
       Hash: 72318de67fbc226e7f2c95c304b8ff8b
     assemblyName: Assembly-CSharp.dll
     namespaceName: ABKaspo.assets.AURW.Examples
@@ -659,28 +732,28 @@ ScriptsOnlyBuild:
     className: CameraOffset
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: InstallReferrerDemo
+  - hash:
+      serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: a6e561615949734e9f12f9b61661f43e
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Image
+      Hash: 04e4a8b0447477cc4e933d9e5311188f
+    assemblyName: UnityEngine.XR.LegacyInputHelpers.dll
+    namespaceName: UnityEngine.XR.LegacyInputHelpers
+    className: ArmModel
   - hash:
       serializedVersion: 2
       Hash: 694d20920c0e41f567e119f7159a3644
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachinePath
-  - hash:
-      serializedVersion: 2
-      Hash: 04e4a8b0447477cc4e933d9e5311188f
-    assemblyName: UnityEngine.XR.LegacyInputHelpers.dll
-    namespaceName: UnityEngine.XR.LegacyInputHelpers
-    className: ArmModel
   - hash:
       serializedVersion: 2
       Hash: 77aaaaa51f7a8d8ff333a879741e47d2
@@ -702,6 +775,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: InAppCommentDemo
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalAsset
@@ -719,6 +798,12 @@ ScriptsOnlyBuild:
     className: CinemachineExternalCamera
   - hash:
       serializedVersion: 2
+      Hash: 6c12fa6d911055286fa8626aed99c4e1
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: GeofenceDemo
+  - hash:
+      serializedVersion: 2
       Hash: 0dbc3be398b4869a5c8d0d8481ee402c
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -729,6 +814,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Postprocessing.Runtime.dll
     namespaceName: UnityEngine.Rendering.PostProcessing
     className: Grain
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AccountManager
+  - hash:
+      serializedVersion: 2
+      Hash: c8562492d73f623630f0bf2204be10fb
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: Huawei.Demos.Location
+    className: FusedLocationDemo
   - hash:
       serializedVersion: 2
       Hash: 6bc76e17f0d5e93f3eea7f5a2fe227f3
@@ -755,6 +852,12 @@ ScriptsOnlyBuild:
     className: Slider
   - hash:
       serializedVersion: 2
+      Hash: ad1e547d3b257c8a3b042f8bd6ce3d5b
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: Modeling3dDemoManager
+  - hash:
+      serializedVersion: 2
       Hash: 3164bc883ff663a5cdb32d1ef7e7c0c5
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -777,6 +880,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CFX_Demo_RotateCamera
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: ScanKitDemo
   - hash:
       serializedVersion: 2
       Hash: 660deb0ce569359218f0ba85b7ce0e3a
@@ -809,10 +918,22 @@ ScriptsOnlyBuild:
     className: DepthOfField
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: AppMessagingDemoManager
+  - hash:
+      serializedVersion: 2
       Hash: a5554ee29b81eb321fb58b09aadde52b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CubeTransform
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: HuaweiMobileServices.dll
+    namespaceName: HuaweiMobileServices.Utils
+    className: HMSDispatcher
   - hash:
       serializedVersion: 2
       Hash: 6225eb0973ab0af667bc5f9d1b1b18de
@@ -851,10 +972,10 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
-      Hash: 699619b86d9359741a4f58540298c80b
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Text
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: APMDemoUIView
   - hash:
       serializedVersion: 2
       Hash: 91d258529db2b5060a913f2afcea1a21
@@ -863,16 +984,28 @@ ScriptsOnlyBuild:
     className: PlaymodeTestsController
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: AppLinkingUIView
+  - hash:
+      serializedVersion: 2
       Hash: 9cf4a50e1f425d06b81c01050a0b2950
     assemblyName: CFXRDemo.dll
     namespaceName: CartoonFX
     className: CFXR_Demo_Translate
   - hash:
       serializedVersion: 2
-      Hash: c1d728126ff1918728036c59106d32b2
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: RawImage
+      Hash: 05497a97b250ddec9448466b9efcae33
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: Huawei.Demos.Location
+    className: ActivityIdentificationDemo
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: RemoteConfigUIView
   - hash:
       serializedVersion: 2
       Hash: 4e875e1432fadf1f077549b388792f99
@@ -893,6 +1026,12 @@ ScriptsOnlyBuild:
     className: CinemachineOrbitalTransposer
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: DriveDemoView
+  - hash:
+      serializedVersion: 2
       Hash: a1f19ad47d3094e235f21b74dfc423a8
     assemblyName: Unity.Postprocessing.Runtime.dll
     namespaceName: UnityEngine.Rendering.PostProcessing
@@ -903,6 +1042,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AnimationScript
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: APMDemoManager
   - hash:
       serializedVersion: 2
       Hash: ed8dd42ed0eaaa753c0c0e94afd42e0e
@@ -917,10 +1062,28 @@ ScriptsOnlyBuild:
     className: CFX_AutoRotate
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: IapDemoManager
+  - hash:
+      serializedVersion: 2
       Hash: 639df67a034e1312464f0bf890c2f14e
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineBrain
+  - hash:
+      serializedVersion: 2
+      Hash: 32ada221ffbb2fa20934e72dd0f4cc8a
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: GeocodingDemo
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: GameDemoManager
   - hash:
       serializedVersion: 2
       Hash: a1aa98c78061c6f03a8c124cda576e67
@@ -1061,10 +1224,22 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAnimator
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: HmsPlugin
+    className: AnalyticsDemoManager
+  - hash:
+      serializedVersion: 2
       Hash: 1d0beb1a2d4edee4c06b6835632e83a3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CFX_AutoStopLoopedEffect
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: CloudDBDemo
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1073,10 +1248,34 @@ ScriptsOnlyBuild:
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: UnityIapDemoManager
+  - hash:
+      serializedVersion: 2
+      Hash: 857508cce7bb260575263cece87df119
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: LocationDemoManager
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Cinemachine.dll
     namespaceName: 
     className: CinemachineTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 9aeba45090dd2235ce52a1c026b739b3
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: LargeImageNative
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: NearbyDemoManager
   - hash:
       serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
@@ -1101,6 +1300,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: MarkerTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: HmsPlugin
+    className: HMSSafeArea
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: AccountUIView
   - hash:
       serializedVersion: 2
       Hash: c0201dbecd85f700bcdff493a272631d
@@ -1139,10 +1350,28 @@ ScriptsOnlyBuild:
     className: Button
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: AccountDemoManager
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: GameDemoUIView
+  - hash:
+      serializedVersion: 2
       Hash: e70e7b311a1620c2e899545b2e1fdfae
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CFX_Demo_RandomDirectionTranslate
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: AdsUIView
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1169,6 +1398,12 @@ ScriptsOnlyBuild:
     className: AutoExposure
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: CrashDemoManager
+  - hash:
+      serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -1179,6 +1414,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineSmoothPath
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: CrashDemoView
   - hash:
       serializedVersion: 2
       Hash: 73c2dd31d6c360d1491c370580013d4e
@@ -1223,6 +1464,12 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 2a1d63b882413890c8fb2db88c25ad78
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ProductManager
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
@@ -1265,10 +1512,22 @@ ScriptsOnlyBuild:
     className: CFX_Demo_RandomDir
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: AppLinkingDemo
+  - hash:
+      serializedVersion: 2
       Hash: 1cdde0c3d8008dfe81d27e4c955d4fe7
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineFramingTransposer
+  - hash:
+      serializedVersion: 2
+      Hash: 6590e99fbac162ef0273cfe627e448dd
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: HmsPlugin
+    className: SettingsScriptableObject
   - hash:
       serializedVersion: 2
       Hash: 8963690ef6f6b05ce03bfd8b5c26e20c
@@ -1313,7 +1572,7 @@ ScriptsOnlyBuild:
     className: PositionAsUV1
   - hash:
       serializedVersion: 2
-      Hash: 7dc7fc9a050794f9966423eca53835fb
+      Hash: 91e8ee01d38d549f374f95d173b35e1c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TransitionScenes
@@ -1349,6 +1608,12 @@ ScriptsOnlyBuild:
     className: CinemachineShot
   - hash:
       serializedVersion: 2
+      Hash: b120461022487a4759262606014f044e
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: ProgressBar
+  - hash:
+      serializedVersion: 2
       Hash: 671420ad2c33f1ddaf6d076461adf15a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1379,6 +1644,12 @@ ScriptsOnlyBuild:
     className: CinemachineTrackedDolly
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: UnityIAPDemoUIView
+  - hash:
+      serializedVersion: 2
       Hash: 32ad028668126aa886e22e0e6ea7927b
     assemblyName: CFXRRuntime.dll
     namespaceName: CartoonFX
@@ -1395,6 +1666,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Postprocessing.Runtime.dll
     namespaceName: UnityEngine.Rendering.PostProcessing
     className: PostProcessEffectSettings
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: DriveDemoManager
   - hash:
       serializedVersion: 2
       Hash: e6d75f1a9bc0c6f7085df0baa077e688
@@ -1445,10 +1722,22 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: RemoteConfigDemo
+  - hash:
+      serializedVersion: 2
       Hash: 5065f436a319f7d4eabef552e95362b4
     assemblyName: CFXRRuntime.dll
     namespaceName: CartoonFX
     className: CFXR_ParticleTextFontAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: NearbyDemoUIView
   - hash:
       serializedVersion: 2
       Hash: 18c222bef9ae745ce69ddde9b74337ca
@@ -1463,7 +1752,7 @@ ScriptsOnlyBuild:
     className: CinemachineTouchInputMapper
   - hash:
       serializedVersion: 2
-      Hash: ba7f12ad93a0252c1ea6483d923f09cc
+      Hash: e96b8c77a9bea143bd22e20cf7c3ab8d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -1479,6 +1768,18 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineStoryboard
+  - hash:
+      serializedVersion: 2
+      Hash: c3235a343bebb54a63a0f86bdb5265fd
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: HMSSplashAdPreview
+  - hash:
+      serializedVersion: 2
+      Hash: 849d4f84e5be4ae817f2f0d82b397948
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: TaskListDisplay
   - hash:
       serializedVersion: 2
       Hash: ef5c43f921427d03730f6ea4c848f07d
@@ -1511,13 +1812,19 @@ ScriptsOnlyBuild:
     className: SwingArmModel
   - hash:
       serializedVersion: 2
+      Hash: 62e040979f1bcc5cfdb183bf34b809bf
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AdsManager
+  - hash:
+      serializedVersion: 2
       Hash: 421b20ccd7815ebee5e2b14a986d2efc
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CFX_Demo_New
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 547089de6213bd44ed5e0963b38ecd3c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LevelLoader
@@ -1539,6 +1846,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SubMeshUI
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: AnalyticsUIView
   - hash:
       serializedVersion: 2
       Hash: 726fcf7961cbb4108aa5be5e55b8c8bf
@@ -1565,7 +1878,7 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAsset
   - hash:
       serializedVersion: 2
-      Hash: dee9f64e943c3b306c1b6c5e460b5c14
+      Hash: 9ebb60e4fc0a90a36971cf42e18df026
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CubeBehaviour
@@ -1577,10 +1890,22 @@ ScriptsOnlyBuild:
     className: CFX_LightFlicker
   - hash:
       serializedVersion: 2
+      Hash: 9b7b7dafb220cef358b451e98a11627a
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: CloudStorageDemo
+  - hash:
+      serializedVersion: 2
       Hash: 5d27c6e85ec89cfab8577e9e26695e88
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CFX_AutoDestructShuriken
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: IAPDemoUIView
   - hash:
       serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
@@ -1601,6 +1926,12 @@ ScriptsOnlyBuild:
     className: CinemachinePOV
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: CloudDBDemoUIView
+  - hash:
+      serializedVersion: 2
       Hash: 63d7b9b64a11859f416d72ba9a3c3fec
     assemblyName: Unity.Postprocessing.Runtime.dll
     namespaceName: UnityEngine.Rendering.PostProcessing
@@ -1617,6 +1948,18 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineBasicMultiChannelPerlin
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: ScanKitUIView
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: Modeling3dMeterialDemoManager
   - hash:
       serializedVersion: 2
       Hash: d5630f96bd5a6a6eed7e1754c3fb8703
@@ -1691,6 +2034,12 @@ ScriptsOnlyBuild:
     className: CinemachineBlendListCamera
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: AuthServiceDemo
+  - hash:
+      serializedVersion: 2
       Hash: d6fc8d3165070298511ec776ea575626
     assemblyName: Unity.Postprocessing.Runtime.dll
     namespaceName: UnityEngine.Rendering.PostProcessing
@@ -1701,6 +2050,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Postprocessing.Runtime.dll
     namespaceName: UnityEngine.Rendering.PostProcessing
     className: AmbientOcclusion
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: HuaweiMobileServices.Core.dll
+    namespaceName: 
+    className: AdsDemoManager
   platform: 13
   scenePathNames:
   - Assets/CubeSurfer/Scenes/MenuScene.unity
@@ -1708,4 +2063,4 @@ ScriptsOnlyBuild:
   - Assets/CubeSurfer/Scenes/Scene2.unity
   - Assets/CubeSurfer/Scenes/Scene3.unity
   - Assets/CubeSurfer/Scenes/MainScene.unity
-  playerPath: "C:/Users/brfna/OneDrive/Masa\xFCst\xFC/CubeSurfer.apk"
+  playerPath: "C:/Users/brfna/OneDrive/Masa\xFCst\xFC/cuber_surfer_final_v1.aab"

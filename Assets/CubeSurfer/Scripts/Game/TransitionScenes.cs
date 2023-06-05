@@ -12,8 +12,10 @@ public class TransitionScenes : MonoBehaviour
 
     public RectTransform MenuUI;
     public RectTransform InformUI;       
-    public RectTransform LevelsUI;   
-    
+    public RectTransform LevelsUI;
+
+    public RectTransform BuyUI;
+
     public void StartGame()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
@@ -43,6 +45,18 @@ public class TransitionScenes : MonoBehaviour
     {
         MenuUI.gameObject.SetActive(true);
         LevelsUI.gameObject.SetActive(false);
+    }    
+    
+    public void ActivateBuyUI()
+    {
+        MenuUI.gameObject.SetActive(false);
+        BuyUI.gameObject.SetActive(true);
+    }
+
+    public void DeActivateBuyUI()
+    {
+        MenuUI.gameObject.SetActive(true);
+        BuyUI.gameObject.SetActive(false);
     }
 
 }

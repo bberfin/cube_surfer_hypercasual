@@ -287,6 +287,12 @@
     <Reference Include="DOTween">
       <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
     </Reference>
+    <Reference Include="HuaweiMobileServices">
+      <HintPath>Assets\Huawei\Dlls\HuaweiMobileServices.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus">
+      <HintPath>Assets\Huawei\Dlls\EPPlus.dll</HintPath>
+    </Reference>
     <Reference Include="netstandard">
       <HintPath>D:\Program Files\Unity\Hub\Editor\2020.3.40f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
     </Reference>
@@ -710,6 +716,10 @@
       <Project>{293C52A1-CBD2-6FD3-115B-5D968748E34C}</Project>
       <Name>CFXRDemo</Name>
     </ProjectReference>
+    <ProjectReference Include="HuaweiMobileServices.Editor.csproj">
+      <Project>{4EDAE630-944F-D25F-69CC-9DC93FE4C29C}</Project>
+      <Name>HuaweiMobileServices.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.PlayerPrefsEditor.Editor.csproj">
       <Project>{02662F52-13AB-07F5-9872-8E0A84967894}</Project>
       <Name>Unity.PlayerPrefsEditor.Editor</Name>
@@ -721,6 +731,10 @@
     <ProjectReference Include="CFXR.WelcomeScreen.csproj">
       <Project>{A6924724-AD1B-7882-B4D8-AC3955081448}</Project>
       <Name>CFXR.WelcomeScreen</Name>
+    </ProjectReference>
+    <ProjectReference Include="HuaweiMobileServices.Core.csproj">
+      <Project>{BCF67407-B22D-9457-CC0B-1E1B2EB411E2}</Project>
+      <Name>HuaweiMobileServices.Core</Name>
     </ProjectReference>
     <ProjectReference Include="CFXRRuntime.csproj">
       <Project>{343FA940-2581-8E0A-7A6D-394FF35A70CE}</Project>

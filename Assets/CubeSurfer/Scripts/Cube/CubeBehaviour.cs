@@ -15,6 +15,8 @@ public class CubeBehaviour : MonoBehaviour
     public GameObject DiamondEffect;
     AudioSource audioSource;
 
+    public AdsManager adsManager; 
+
 
     void FixedUpdate()
     {
@@ -79,6 +81,7 @@ public class CubeBehaviour : MonoBehaviour
     {
         PlayerBehaviour.Instance.VictoryAnimation();
         PlayerBehaviour.Instance.SlowDownPlayer();
+        //adsManager.ShowInterstitial();
         GameManager.Instance.ActivateNextUI();
         Debug.Log("next level!");
 
@@ -91,6 +94,7 @@ public class CubeBehaviour : MonoBehaviour
     {
         PlayerBehaviour.Instance.VictoryAnimation();
         PlayerBehaviour.Instance.SlowDownPlayer();
+        //adsManager.ShowInterstitial();
         GameManager.Instance.ActivateWinUI();
         Debug.Log("win!");
 

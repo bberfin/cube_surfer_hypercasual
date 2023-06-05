@@ -311,8 +311,14 @@
     <Reference Include="DOTween">
       <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
     </Reference>
+    <Reference Include="HuaweiMobileServices">
+      <HintPath>Assets\Huawei\Dlls\HuaweiMobileServices.dll</HintPath>
+    </Reference>
     <Reference Include="JMOAssets_CartoonFXFreeWelcome">
       <HintPath>Assets\JMO Assets\Editor\JMOAssets_CartoonFXFreeWelcome.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus">
+      <HintPath>Assets\Huawei\Dlls\EPPlus.dll</HintPath>
     </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.17.2\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>

@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HuaweiMobileServices.Core", "HuaweiMobileServices.Core.csproj", "{BCF67407-B22D-9457-CC0B-1E1B2EB411E2}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{9B773032-7D37-9857-FD57-4A6A06C36401}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CFXRDemo", "CFXRDemo.csproj", "{293C52A1-CBD2-6FD3-115B-5D968748E34C}"
@@ -14,6 +16,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.PlayerPrefsEditor.Samples.SampleScene", "Unity.PlayerPrefsEditor.Samples.SampleScene.csproj", "{7A8D62E6-BFA2-50DA-E3C5-0B2E89EE34A1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CFXR.WelcomeScreen", "CFXR.WelcomeScreen.csproj", "{A6924724-AD1B-7882-B4D8-AC3955081448}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HuaweiMobileServices.Editor", "HuaweiMobileServices.Editor.csproj", "{4EDAE630-944F-D25F-69CC-9DC93FE4C29C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.PlayerPrefsEditor.Editor", "Unity.PlayerPrefsEditor.Editor.csproj", "{02662F52-13AB-07F5-9872-8E0A84967894}"
 EndProject
@@ -31,6 +35,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCF67407-B22D-9457-CC0B-1E1B2EB411E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCF67407-B22D-9457-CC0B-1E1B2EB411E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCF67407-B22D-9457-CC0B-1E1B2EB411E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCF67407-B22D-9457-CC0B-1E1B2EB411E2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9B773032-7D37-9857-FD57-4A6A06C36401}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9B773032-7D37-9857-FD57-4A6A06C36401}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B773032-7D37-9857-FD57-4A6A06C36401}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -59,6 +67,10 @@ Global
 		{A6924724-AD1B-7882-B4D8-AC3955081448}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6924724-AD1B-7882-B4D8-AC3955081448}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6924724-AD1B-7882-B4D8-AC3955081448}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EDAE630-944F-D25F-69CC-9DC93FE4C29C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EDAE630-944F-D25F-69CC-9DC93FE4C29C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EDAE630-944F-D25F-69CC-9DC93FE4C29C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EDAE630-944F-D25F-69CC-9DC93FE4C29C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{02662F52-13AB-07F5-9872-8E0A84967894}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{02662F52-13AB-07F5-9872-8E0A84967894}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02662F52-13AB-07F5-9872-8E0A84967894}.Release|Any CPU.ActiveCfg = Release|Any CPU
