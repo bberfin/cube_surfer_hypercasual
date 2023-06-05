@@ -14,15 +14,12 @@
 - Integrating Ads Kit:
   - Interstitial Ads at every end of the level
   - Rewarded Ads for taking something in gameplay
-  - Timing and suitability to gameflow of Rewarded Ads
   - Native Ads Integration
   - Banner Ads Integration
   
 - Integrating IAP Kit:
   - Consumable Product Integration
-  - Timing and suitability to gameflow of Consumable
   - NonConsumable Product Integration
-  - Timing and suitability to gameflow of NonConsumable
 
 - Releasing app on App Gallery
 - Application Store Page Quality
