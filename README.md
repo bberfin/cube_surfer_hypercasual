@@ -7,6 +7,42 @@
 - You can move the character to the right and left of the road by moving your finger to the left and right anywhere on the screen.
 - The character moves forward at a constant speed. You want to be able to change this speed from the editor.
 - The player starts the game with 1 cube and collects these cubes and, stacks them. The cubes are placed on the bottom floor, the other cubes go up one floor.
+
+#
+### VERSION 2 UPDATES:
+>Integrated https://github.com/EvilMindDevs/hms-unity-plugin plugin to the project.
+- Integrating Ads Kit:
+  - Interstitial Ads at every end of the level
+  - Rewarded Ads for taking something in gameplay
+  - Timing and suitability to gameflow of Rewarded Ads
+  - Native Ads Integration
+  - Banner Ads Integration
+  
+- Integrating IAP Kit:
+  - Consumable Product Integration
+  - Timing and suitability to gameflow of Consumable
+  - NonConsumable Product Integration
+  - Timing and suitability to gameflow of NonConsumable
+
+- Releasing app on App Gallery
+- Application Store Page Quality
+- Being Downloadable and Playable with all functionalities
+
+>Level page added.
+
+>Added page to skip ads and buy coins.
+  - Each time you pass a new level, they are unlocked from the menu and you can play the requested level over and over.
+  - You can unlock unlocked levels by purchasing coins.
+  - If you are failed, you can continue from the same level by watching ads.
+
+![zyro-image (3)](https://github.com/bberfin/cube_surfer_hypercasual/assets/72701330/cf0022c0-1232-4b1f-b694-fd347349a6db)
+![zyro-image (7)](https://github.com/bberfin/cube_surfer_hypercasual/assets/72701330/6f366eef-65bb-4b11-ad60-eeda62679d0d)
+![zyro-image (8)](https://github.com/bberfin/cube_surfer_hypercasual/assets/72701330/bb2ad7a6-41de-4e43-8542-194cc8160797)
+
+![zyro-image (9)](https://github.com/bberfin/cube_surfer_hypercasual/assets/72701330/e101e8d4-ba22-47c4-846f-463570418f3a)
+![zyro-image (2)](https://github.com/bberfin/cube_surfer_hypercasual/assets/72701330/8c6ee809-24d9-41d5-b92a-5ce3cbfb0a15)
+![zyro-image (6)](https://github.com/bberfin/cube_surfer_hypercasual/assets/72701330/e1b684ba-d1f3-4445-91f1-c3fd811ecfee)
+
 # 
 ##### LEVELS 
 
