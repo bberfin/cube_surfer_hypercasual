@@ -42,6 +42,8 @@
 ![zyro-image (9)](https://github.com/bberfin/cube_surfer_hypercasual/assets/72701330/e101e8d4-ba22-47c4-846f-463570418f3a)
 ![zyro-image (2)](https://github.com/bberfin/cube_surfer_hypercasual/assets/72701330/8c6ee809-24d9-41d5-b92a-5ce3cbfb0a15)
 ![zyro-image (6)](https://github.com/bberfin/cube_surfer_hypercasual/assets/72701330/e1b684ba-d1f3-4445-91f1-c3fd811ecfee)
+![zyro-image (10)](https://github.com/bberfin/cube_surfer_hypercasual/assets/72701330/a09098e0-4d91-4146-af99-c8134bd3346c)
+
 
 # 
 ##### LEVELS 
